@@ -1,7 +1,8 @@
 How to install
 =======
 
-  1. Goto Tools > Extensions
-  2. Enable Developer Mode
-  3. Load unpacked extensions
-  4. Choose the path of this repo
+  1. Download the repo
+  2. Goto Tools > Extensions
+  3. Enable Developer Mode
+  4. Click Load unpacked extensions
+  5. Choose the path of the downloaded folder
