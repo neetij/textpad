@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Textpad</title>
-        <script src="file_process.js"></script>
-    </head>
-
-    <style>
-        body {
-            font-family: consolas;
-            font-size: 2rem;
-            line-height: 1.4;
-            max-width: 60rem;
-            margin: 0 auto;
-            padding: 4rem;
-
-            background: rgb(213, 213, 213);
-            color: rgb(85, 85, 85);
-            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-        }
-    </style>
-
-    <body id="pad" contenteditable>
-
-    </body>
+<head>
+	<title>Textpad</title>
+	<script src="file_process.js"></script>
+	<link rel="shortcut icon" href="icon.png"/>
+	<style>
+		body {
+			font-family: consolas;
+			font-size: 1rem;
+			line-height: 1.4;
+			max-width: 60rem;
+			margin: 0 auto;
+			padding: 4rem;
+			background: rgb(213, 213, 213);
+			color: rgb(85, 85, 85);
+			text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+		}
+		div, div:active, div:focus {
+			outline:none;
+		}
+		#pads {
+			visibility: hidden;
+		}
+	</style></head>
+<body>
+	<div id="pads">
+		<strong>_TODO</strong>
+		<div id="pad1" contenteditable></div>
+		<br>
+		<strong>_IN PROGRESS</strong>
+		<div id="pad2" contenteditable></div>
+		<br>
+		<strong>_DONE</strong>
+		<div id="pad3" contenteditable></div>
+	</div>
+</body>
 </html>
